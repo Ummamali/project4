@@ -7,3 +7,10 @@ You should read only the sass code which is included along with the project
 * about.html
 * work.html
 * contact.html
+# Stylesheets
+* style.css (main stylesheet)
+* index.css
+* work.css
+* contact.css
+# Syntactically Awesome StyleSheets
+to be updated 
