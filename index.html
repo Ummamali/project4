@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="fcol">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ummam Ali | Proton Designer and Developer">
@@ -11,11 +11,13 @@
   <!-- Styles, one specific and one global-->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/index.css">
+  <!-- Javascript for fonts and stuff -->
+  <script src="https://kit.fontawesome.com/8f301084b2.js" crossorigin="anonymous"></script>
   <title>John Doe | We present personalities | PROTON Portfolios </title>
 </head>
 
 <body>
-  <header class="main-head">
+  <header class="main-head fcol">
     <nav class="main-nav">
       <div class="contain-sm frow fcross-cen">
         <div class="logo">
@@ -31,7 +33,108 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar ends here -->
+    <div class="showcase fcol-centered fg-light">
+      <h1>I am <span>John Doe</span>, a web developer</h1>
+      <p class="mb-30">I am really passionate about design, web development and UI/UX</p>
+      <a href="about.html" class="btn bg-primary-light"><i class="fas fa-chevron-right"></i>Learn More</a>
+    </div>
   </header>
+  <!-- Header ends here -->
+  <main>
+    <section class="specialize main-section">
+        <div class="text-area">
+          <h2 class="fw-4">I SPECIALIZE IN</h2>
+          <div class="line bg-secondary"></div>
+          <p>Photograpy as well as designing sophisticated applications with responsive and engaging UI/UX</p>
+        </div>
+        <div class="frow">
+          <div class="card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Documentation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam quae magnam </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-desktop"></i>
+            <h3>Responsive Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam quae magnam </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>Modern Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam quae magnam </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-mouse"></i>
+            <h3>User Interactive</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam quae magnam </p>
+          </div>
+        </div>
+    </section>
+    <!-- Now the statistics section -->
+    <section class="stats frow">
+      <div class="card fcol-centered">
+        <i class="fas fa-users"></i>
+        <p>Clients</p>
+        <h3>114</h3>
+      </div>
+      <div class="card fcol-centered">
+        <i class="fas fa-award"></i>
+        <p>Awards</p>
+        <h3>4</h3>
+      </div>
+      <div class="card fcol-centered">
+        <i class="fas fa-hourglass-half"></i>
+        <p>Hours Worked</p>
+        <h3>3500</h3>
+      </div>
+      <div class="card fcol-centered">
+        <i class="fas fa-code-branch"></i>
+        <p>Projects</p>
+        <h3>28</h3>
+      </div>
+    </section>
+
+    <!-- Now the second main creative section -->
+    <section class="creative main-section">
+      <div class="text-area">
+          <h2 class="fw-4">SOME OF MY CREATIVE PROCESSES</h2>
+          <div class="line bg-primary-light"></div>
+          <p>I have been working continuously with modern technologies to develop comprehensive and interactive applications, as well as enhancing modern User Interface and User Experience</p>
+      </div>
+      <div class="frow">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Business Deals</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor adipisci quis deleniti temporibus similique quae quasi sed vel dignissimos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-bezier-curve"></i>
+          </div>
+          <h3>Design Analysis</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor adipisci quis deleniti temporibus similique quae quasi sed vel dignissimos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Minimum Delay Response</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor adipisci quis deleniti temporibus similique quae quasi sed vel dignissimos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h3>Mobile App Sockets</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor adipisci quis deleniti temporibus similique quae quasi sed vel dignissimos.</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
 </body>
 
 </html>

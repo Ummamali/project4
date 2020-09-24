@@ -122,6 +122,14 @@
   background-color: #1D2638;
 }
 
+.bg-primary-light {
+  background: #50627D;
+}
+
+.bg-secondary {
+  background: #fca535;
+}
+
 .bg-none {
   background: none;
 }
@@ -171,10 +179,15 @@
   color: #ffffff;
 }
 
+.fg-secondary {
+  color: #fca535;
+}
+
 /* Containers */
 .contain-sm {
   max-width: 980px;
   margin: auto;
+  height: 100%;
 }
 
 /* Buttons and stuff */
@@ -183,12 +196,16 @@
   padding: 10px 15px;
   display: inline-block;
   text-align: center;
-  transition-property: transform, box-shadow;
-  transition-duration: 300ms;
+  transition-property: transform, box-shadow, background, color;
+  transition-duration: 200ms;
+}
+
+.btn i {
+  margin-right: 4px;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: 0px 0px 8px #0000002f;
 }
 
@@ -223,7 +240,23 @@
 }
 
 .present {
-  border-bottom: 1.6px solid #fbac45;
+  border-bottom: 1.6px solid #fca535;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+}
+.card p {
+  font-size: 13.5px;
+  line-height: 1.15rem;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  margin: auto;
+  width: 100%;
 }
 
 * {
@@ -242,7 +275,6 @@ a {
 }
 
 .main-head {
-  width: 100vw;
   height: 100vh;
   background: url("../img/showcase.jpg") no-repeat;
   background-size: cover;
@@ -275,7 +307,7 @@ a {
 
 .main-nav .nav-items a:hover {
   border-bottom: 1.6px solid #e0e0e0;
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
 }
 
 /*# sourceMappingURL=style.css.map */
