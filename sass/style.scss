@@ -60,3 +60,42 @@ a{
   transform: translateY(-1.5px);
 }
 
+
+
+// Now The main footer
+.main-foot{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: $primary-dark;
+  color: $light;
+  padding: 30px 10px;
+  border-top: 5px solid $secondary;
+
+  small{
+    color: lighten($color: $dark, $amount: 45%);
+  }
+  .proton{
+    text-align: center;
+    i{
+      font-size: 38px;
+    }
+    h2{
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+  }
+  .social{
+    .icons{
+      a{
+        font-size: 20px;
+        padding: 4px;
+        transition-property: color;
+        transition-duration: $dur;
+
+        &:hover{
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

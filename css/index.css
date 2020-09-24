@@ -4,7 +4,7 @@
   padding: 10px;
 }
 .showcase h1 {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 400;
 }
 .showcase h1 span {
@@ -25,6 +25,12 @@
   color: #fca535;
   font-size: 36px;
   margin-bottom: 20px;
+  transition-property: transform, background, color;
+  transition-duration: 200ms;
+}
+.specialize .frow .card:hover i {
+  transform: translateY(-10px);
+  color: #50627D;
 }
 
 .stats .card {
@@ -48,6 +54,9 @@
   background: #efefef;
 }
 
+.creative {
+  padding: 40px 10px 20px 10px !important;
+}
 .creative .text-area .line {
   width: 160px;
 }
@@ -67,9 +76,23 @@
   color: #e0e0e0;
   border-radius: 50%;
   margin-bottom: 25px;
+  position: relative;
 }
 .creative .frow .card .icon i {
   font-size: 38px;
+}
+.creative .frow .card .icon .number {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -2px;
+  top: -5px;
+  background: #50627D;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .main-section {
@@ -79,6 +102,9 @@
 }
 .main-section .text-area {
   text-align: center;
+}
+.main-section .text-area h2 {
+  text-shadow: 0px 0px 4px rgba(51, 51, 51, 0.1);
 }
 .main-section .text-area p {
   color: #8c8c8c;
@@ -90,12 +116,39 @@
 .main-section .frow {
   padding: 20px 0px 0px 0px;
 }
+.main-section .frow small {
+  opacity: 0;
+  padding: 5px 10px;
+  margin-top: 8px;
+  border-radius: 3px;
+  transition-property: background, color;
+  transition-duration: 200ms;
+}
+.main-section .frow small:hover {
+  background: #546783;
+}
 .main-section .frow h3 {
   font-weight: 400;
   margin-bottom: 5px;
 }
 .main-section .frow p {
   color: #666666;
+}
+.main-section .frow .icon, .main-section .frow small, .main-section .frow .icon .number {
+  transition-property: transform, background, color, opacity;
+  transition-duration: 200ms;
+}
+.main-section .frow .card:hover .icon {
+  background: #fca535;
+  color: #333333;
+  transform: translateY(-10px);
+}
+.main-section .frow .card:hover .icon .number {
+  background: #333333;
+  color: #ffffff;
+}
+.main-section .frow .card:hover small {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
