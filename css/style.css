@@ -190,6 +190,12 @@
   height: 100%;
 }
 
+.contain-lg {
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+}
+
 /* Buttons and stuff */
 .btn {
   border: none;
@@ -254,6 +260,62 @@
   width: 100%;
 }
 
+.main-section {
+  max-width: 1040px;
+  margin: auto;
+  padding: 40px 10px;
+}
+.main-section .text-area {
+  text-align: center;
+}
+.main-section .text-area h2 {
+  text-shadow: 0px 0px 4px rgba(51, 51, 51, 0.1);
+}
+.main-section .text-area p {
+  color: #8c8c8c;
+}
+.main-section .text-area .line {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.main-section .frow {
+  padding: 20px 0px 0px 0px;
+}
+.main-section .frow small {
+  opacity: 0;
+  padding: 5px 10px;
+  margin-top: 8px;
+  border-radius: 3px;
+  transition-property: background, color;
+  transition-duration: 200ms;
+}
+.main-section .frow small:hover {
+  background: #546783;
+}
+.main-section .frow h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.main-section .frow p {
+  color: #666666;
+}
+.main-section .frow .icon, .main-section .frow small, .main-section .frow .icon .number {
+  transition-property: transform, background, color, opacity;
+  transition-duration: 200ms;
+}
+.main-section .frow .card:hover .icon {
+  background: #fca535;
+  color: #333333;
+  transform: translateY(-10px);
+}
+.main-section .frow .card:hover .icon .number {
+  background: #333333;
+  color: #ffffff;
+}
+.main-section .frow .card:hover small {
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -267,13 +329,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.main-head {
-  height: 100vh;
-  background: url("../img/showcase.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .main-nav {
@@ -307,7 +362,7 @@ a {
 
 .main-foot {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   background-color: #1D2638;
   color: #ffffff;
   padding: 30px 10px;
@@ -318,6 +373,7 @@ a {
 }
 .main-foot .proton {
   text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 .main-foot .proton i {
   font-size: 38px;

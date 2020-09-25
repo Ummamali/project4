@@ -23,13 +23,7 @@ a{
 }
 
 
-// Header and stuff
-.main-head{
-  height: 100vh;
-  background: url('../img/showcase.jpg') no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+
 // Ths main navbar
 .main-nav{
   padding: 5px 20px;
@@ -65,7 +59,7 @@ a{
 // Now The main footer
 .main-foot{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   background-color: $primary-dark;
   color: $light;
   padding: 30px 10px;
@@ -76,6 +70,7 @@ a{
   }
   .proton{
     text-align: center;
+    border-right: 1px solid rgba($light, 0.1);
     i{
       font-size: 38px;
     }
