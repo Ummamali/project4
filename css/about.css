@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
-  margin-top: 30px;
+  padding: 40px 0px;
   max-width: 1100px;
 }
 .modern .grid .icontain {
@@ -59,7 +59,7 @@
   height: 150px;
   transform: rotate(20deg);
   transition-property: transform;
-  transition-duration: 1200ms;
+  transition-duration: 700ms;
 }
 .modern .grid .icontain .icon {
   width: 80px;
@@ -100,6 +100,47 @@
 }
 .modern .grid .icontain:hover {
   transform: rotate(-20deg);
+}
+.modern .explanation {
+  background: #333333;
+  color: #ffffff;
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  display: relative;
+  height: 200px;
+}
+.modern .explanation .card {
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+}
+.modern .explanation .card h3 {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.modern .explanation .card p, .modern .explanation .card small {
+  color: #cccccc;
+}
+.modern .explanation .card p {
+  font-size: 15px;
+}
+.modern .explanation #exp-documentation .btn, .modern .explanation #exp-innovation .btn {
+  background: #fca535;
+  color: #333333;
+  border-radius: 5px;
+}
+.modern .explanation #exp-code .btn, .modern .explanation #exp-responsive .btn {
+  background: #3c4a5e;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=about.css.map */
