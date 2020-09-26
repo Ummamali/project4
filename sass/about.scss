@@ -230,13 +230,74 @@
 // Clients section
 
 .clients{
-  background: $grey-light;
   .contain-sm{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 40px 10px;
   }
 }
+
+
+// testimonials section
+.testimonials{
+  max-width: 1100px;
+  padding: 40px 10px 10px 10px;
+  .text-area{
+    h2{
+      letter-spacing: 0.6rem;
+    }
+
+    .line{
+      width: 200px;
+      background: $primary-dark;
+    }
+  }
+  .people{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 5px;
+    padding: 20px;
+    height: initial;
+    transition-property: height;
+    transition-duration: $dur;
+
+    .fcol{
+      border: 1px solid $dark-grey;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      background: lighten($color: $grey-light, $amount: 4%);
+      max-width: 200px;
+      margin: auto;
+      transition-property: transform;
+      transition-duration: $dur;
+
+      img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 4px;
+      }
+      h4{
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 11px;
+      }
+      p{
+        color: lighten($color: $dark, $amount: 20%);
+        font-size: 10px;
+      }
+
+      &:hover{
+        cursor: none;
+      }
+    }
+  }
+}
+
+// Media queries
 
 
 

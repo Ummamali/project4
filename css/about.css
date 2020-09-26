@@ -178,13 +178,62 @@
   background: #fca535;
 }
 
-.clients {
-  background: #efefef;
-}
 .clients .contain-sm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 40px 10px;
+}
+
+.testimonials {
+  max-width: 1100px;
+  padding: 40px 10px 10px 10px;
+}
+.testimonials .text-area h2 {
+  letter-spacing: 0.6rem;
+}
+.testimonials .text-area .line {
+  width: 200px;
+  background: #1D2638;
+}
+.testimonials .people {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  column-gap: 5px;
+  padding: 20px;
+  height: initial;
+  transition-property: height;
+  transition-duration: 200ms;
+}
+.testimonials .people .fcol {
+  border: 1px solid #999999;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  background: #f9f9f9;
+  max-width: 200px;
+  margin: auto;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+.testimonials .people .fcol img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.testimonials .people .fcol h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+.testimonials .people .fcol p {
+  color: #666666;
+  font-size: 10px;
+}
+.testimonials .people .fcol:hover {
+  cursor: none;
 }
 
 /*# sourceMappingURL=about.css.map */
