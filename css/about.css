@@ -143,4 +143,48 @@
   border-radius: 5px;
 }
 
+.skills {
+  background: #1D2638;
+  color: #ffffff;
+  padding: 30px 10px;
+}
+.skills h2 {
+  text-align: center;
+}
+.skills .line {
+  width: 100px;
+  background: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #fca535;
+}
+.skills .status article {
+  padding: 8px 5px;
+}
+.skills .status article h4 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.skills .status article .per-contain {
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 14px;
+  width: 100%;
+}
+.skills .status article .per-contain .per-status {
+  height: 100%;
+  border-radius: 5px;
+  background: #fca535;
+}
+
+.clients {
+  background: #efefef;
+}
+.clients .contain-sm {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 10px;
+}
+
 /*# sourceMappingURL=about.css.map */

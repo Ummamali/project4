@@ -182,4 +182,67 @@
 }
 
 
+// Technical skills section
+.skills{
+  background: $primary-dark;
+  color: $light;
+  padding: 30px 10px;
+  
+  h2{
+    text-align: center;
+  }
+  .line{
+    width: 100px;
+    background: $light;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: $secondary;
+
+  }
+
+  .status{
+
+    article{
+      padding: 8px 5px;
+
+      h4{
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      
+      .per-contain{
+        background: $grey;
+        border-radius: 5px;
+        height: 14px;
+        width: 100%;
+
+        .per-status{
+        height: 100%;
+        border-radius: 5px;
+        background: $secondary;
+      }
+      }
+    }
+  }
+}
+
+// Clients section
+
+.clients{
+  background: $grey-light;
+  .contain-sm{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
