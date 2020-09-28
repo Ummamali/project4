@@ -1,3 +1,71 @@
+.main-nav {
+  background: url("../img/navbar.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
+.work .text-area .line {
+  width: 50px;
+  background: #fca535;
+}
+.work .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.work .grid .image {
+  overflow: hidden;
+  position: relative;
+}
+.work .grid .image img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999;
+  transition-property: transform;
+  transition-duration: 3s;
+}
+.work .grid .image article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 3s;
+}
+.work .grid .image article h2 {
+  font-size: 38px;
+  font-weight: 400;
+  margin-top: 3px;
+}
+.work .grid .image .back {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -430px;
+  left: -430px;
+  background: rgba(252, 165, 53, 0.9);
+  transform: rotate(45deg);
+  transition-property: transform;
+  transition-duration: 3s;
+}
+.work .grid .image:hover img {
+  transform: scale(1.2);
+}
+.work .grid .image:hover article {
+  transform: translateY(100%);
+  opacity: 1;
+}
+.work .grid .image:hover .back {
+  transform: rotate(45deg) translateX(430px);
+}
 
 /*# sourceMappingURL=work.css.map */

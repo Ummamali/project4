@@ -14,6 +14,7 @@ $font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
 $sm-width: 980px;
 $lg-width: 1240px;
 $dur: 200ms;
+$dur-long: 3s;
 
 // mixins
 
@@ -34,3 +35,5 @@ $dur: 200ms;
   bottom: $x;
   right: $y;
 }
+
+
