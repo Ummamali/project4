@@ -1,3 +1,14 @@
+@keyframes opacitate-out {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main-head {
   height: 100vh;
   background: url("../img/showcase.jpg") no-repeat;

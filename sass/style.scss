@@ -38,6 +38,32 @@ a{
       width: 100%;
     }
   }
+  // following is the style for hidden nav items
+  // toggler has no display 
+  #toggler{
+    color: inherit;
+    background: none;
+    border: none;
+    font-size: 28px;
+    transition-property: transform;
+    transition-duration: $dur-long;
+    padding: 5px;
+    display: none;
+    z-index: 2;
+    position: relative;
+
+    &:hover{transform:scale(1.1); cursor: pointer;}
+    &:focus{outline: none; transform: scale(1.1);}
+  }
+  #res-nav{
+    transition-property: transform, opacity;
+    transition-duration: $dur-long;
+    .logo{
+      display: none;
+      width: 100px;
+      margin-bottom: 40px;
+    }
+  }
 }
 .main-nav .nav-items a{
   display: inline-block;
@@ -45,13 +71,14 @@ a{
   font-size: 14px;
   margin: 0px 15px;
   padding-bottom: 5px;
+  border-bottom: 1.6px solid transparent;
   font-weight: 200;
   transition-property: transform;
   transition-duration: $dur;
 }
 .main-nav .nav-items a:hover{
   border-bottom: 1.6px solid $grey;
-  transform: translateY(-1.5px);
+  transform: translateY(-2px);
 }
 
 
@@ -96,10 +123,41 @@ a{
 }
 
 
-// Media quieris
+// Media quieris---------------------------------------------------
 
 // Tablet or less
 @media(max-width: 770px){
+  // Navbar
+  .main-nav{
+    .nav-items{
+      #toggler{display: block;}
+      // below is the majic happening
+
+      #res-nav{
+        position: fixed;
+        top: 0px;
+        left: 100vw;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        ul{
+          flex-direction: column;
+          .logo{display: block;}
+          a{
+            font-size: 16px;
+            font-weight: 300;
+            margin: 10px 0px;
+            letter-spacing: 0.2rem;
+          }
+        }
+      }
+    }
+  }
   // Footer
   .main-foot{
     grid-template-columns: 1fr;
