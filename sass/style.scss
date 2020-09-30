@@ -64,12 +64,12 @@ a{
   color: $light;
   padding: 30px 10px;
   border-top: 5px solid $secondary;
+  text-align: center;
 
   small{
     color: lighten($color: $dark, $amount: 45%);
   }
   .proton{
-    text-align: center;
     border-right: 1px solid rgba($light, 0.1);
     i{
       font-size: 38px;
@@ -92,5 +92,26 @@ a{
         }
       }
     }
+  }
+}
+
+
+// Media quieris
+
+// Tablet or less
+@media(max-width: 770px){
+  // Footer
+  .main-foot{
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+
+    .proton{
+      border-right: none;
+      h2{margin-bottom: 10px;}
+    }
+    .social{
+      small, .far.fa-thumbs-up{display: none;}
+    }
+
   }
 }

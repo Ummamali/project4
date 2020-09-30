@@ -32,4 +32,27 @@
   cursor: pointer;
 }
 
+.banner {
+  background: #1D2638;
+  color: #ffffff;
+  padding: 50px 15px;
+  text-align: center;
+}
+.banner h2 {
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.banner h2 span {
+  color: #fca535;
+}
+.banner p {
+  color: #b2bdce;
+}
+.banner .btn {
+  background: #e0e0e0;
+  color: #333333;
+  border-radius: 2px;
+}
+
 /*# sourceMappingURL=contact.css.map */

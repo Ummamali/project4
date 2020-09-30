@@ -43,3 +43,28 @@
     }
   }
 }
+
+.banner{
+  background: $primary-dark;
+  color: $light;
+  padding: 50px 15px;
+  text-align: center;
+
+  h2{
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 6px;
+
+    span{
+      color: $secondary;
+    }
+  }
+  p{
+    color: lighten($color: $primary-light, $amount: 35%);
+  }
+  .btn{
+    background: $grey;
+    color: $dark;
+    border-radius: 2px;
+  }
+}
