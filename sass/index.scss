@@ -13,7 +13,7 @@
 .showcase{
   flex-grow: 1;
   text-align: center;
-  padding: 10px;
+  padding: 0px 20px;
 
   h1{
     font-size: 48px;
@@ -23,9 +23,8 @@
       font-size: 60px;
     }
   }
-  h1, p{
-    text-shadow: 0px 0px 10px rgba($dark, 0.2);
-
+  p{
+      color: rgba($color: $light, $alpha: 0.9);
   }
 
   .btn:hover{
@@ -164,6 +163,7 @@
     }
     small{
       opacity: 0;
+      word-wrap: none;
       padding: 5px 10px;
       margin-top: 8px;
       border-radius: 3px;
@@ -183,9 +183,23 @@
 
 
 
-// Media queries
+// Media queries-------------------------------------------------
 // tablets or less
 @media (max-width:770px){
+  // showcase
+  .showcase{
+    h1{
+      font-size: 38px;
+      span{
+        font-size: 42px;
+      }
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+  // statistics section
   .stats{
     padding: 10px;
     gap: 10px !important;
@@ -196,12 +210,34 @@
   }
 
   // creative
-  .creative .grid-4{gap: 35px;}
-  .creative .grid-4 .card small{opacity: 1;}
+  .creative{
+    .grid-4{
+      gap: 35px;
+      .card{
+        small{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
  
 }
 // mobiles or less
 @media (max-width:500px){
+  // showcase
+  .showcase{
+    padding: 0px 10px;
+    h1{
+      font-size: 28px;
+      span{
+        font-size: 32px;
+      }
+    }
+  }
   // bad icons
-  .specialize .grid-4 i, .creative .grid-4 .card .icon{margin-bottom: 10px;}
+  .specialize .grid-4 i,
+  .creative .grid-4 .card .icon{
+    margin-bottom: 10px;
+  }
 }

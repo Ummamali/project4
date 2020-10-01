@@ -8,7 +8,7 @@
 .showcase {
   flex-grow: 1;
   text-align: center;
-  padding: 10px;
+  padding: 0px 20px;
 }
 .showcase h1 {
   font-size: 48px;
@@ -17,8 +17,8 @@
 .showcase h1 span {
   font-size: 60px;
 }
-.showcase h1, .showcase p {
-  text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.2);
+.showcase p {
+  color: rgba(255, 255, 255, 0.9);
 }
 .showcase .btn:hover {
   background: #fca535;
@@ -134,6 +134,7 @@
 }
 .creative .grid-4 small {
   opacity: 0;
+  word-wrap: none;
   padding: 5px 10px;
   margin-top: 8px;
   border-radius: 3px;
@@ -145,6 +146,16 @@
 }
 
 @media (max-width: 770px) {
+  .showcase h1 {
+    font-size: 38px;
+  }
+  .showcase h1 span {
+    font-size: 42px;
+  }
+  .showcase p {
+    font-size: 14px;
+  }
+
   .stats {
     padding: 10px;
     gap: 10px !important;
@@ -157,13 +168,23 @@
   .creative .grid-4 {
     gap: 35px;
   }
-
   .creative .grid-4 .card small {
     opacity: 1;
   }
 }
 @media (max-width: 500px) {
-  .specialize .grid-4 i, .creative .grid-4 .card .icon {
+  .showcase {
+    padding: 0px 10px;
+  }
+  .showcase h1 {
+    font-size: 28px;
+  }
+  .showcase h1 span {
+    font-size: 32px;
+  }
+
+  .specialize .grid-4 i,
+.creative .grid-4 .card .icon {
     margin-bottom: 10px;
   }
 }

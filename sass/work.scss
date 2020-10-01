@@ -57,6 +57,7 @@
         
         p{
           font-size: 14px;
+          color: rgba($color: $light, $alpha: 0.8);
         }
         h2{
           font-size: 30px;
@@ -87,7 +88,7 @@
           opacity: 1;
         }
         .back{
-          transform: rotate(45deg) translateX(430px);
+          transform: rotate(45deg) translateX(480px);
         }
       }
     }
@@ -95,6 +96,61 @@
     a:nth-child(even){
       .back{
         background: rgba($color: $secondary, $alpha: 0.9);
+      }
+    }
+  }
+}
+
+
+// Media queries
+
+// tablet or less
+@media (max-width:770px){
+  // the work section and its grid
+  .work{
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+
+      a:last-child{
+        grid-column-end: span 2;
+        max-width: 400px;
+        align-self: center;
+        justify-self: center;
+      }
+
+      .image{
+        article{
+          transform: translateY(100%);
+          opacity: 1;
+          }
+        .back{
+            background: rgba($color: $dark, $alpha: 0.6);
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            transform: none;
+
+            &:nth-child(even){
+            background: rgba($color: #000000, $alpha: 0.6);
+            }
+          }
+      &:hover{
+        .back{transform: none !important;}
+      }
+    }
+  }
+}
+}
+
+@media(max-width: 500px){
+  .work{
+    .grid{
+      grid-template-columns: 1fr;
+
+      a:last-child{
+        grid-column-end: initial;
+        max-width: unset;
       }
     }
   }
