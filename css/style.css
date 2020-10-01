@@ -1,27 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
-@keyframes opacitate-out {
-  0% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes opacitate-out {
-  0% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* Margins at the bottom */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -473,24 +451,45 @@ a {
   background: none;
   border: none;
   font-size: 28px;
-  transition-property: transform;
-  transition-duration: 900ms;
+  transition: transform 900ms, color 900ms;
   padding: 5px;
   display: none;
   z-index: 2;
   position: relative;
 }
 .main-nav #toggler:hover {
-  transform: scale(1.1);
+  color: #fca535;
   cursor: pointer;
 }
 .main-nav #toggler:focus {
   outline: none;
-  transform: scale(1.1);
 }
 .main-nav #res-nav {
+  position: fixed;
+  top: 0px;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
   transition-property: transform, opacity;
   transition-duration: 900ms;
+  display: none;
+  opacity: 0;
+}
+.main-nav #res-nav ul {
+  flex-direction: column;
+}
+.main-nav #res-nav ul .logo {
+  display: block;
+}
+.main-nav #res-nav ul a {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0px;
+  letter-spacing: 0.2rem;
 }
 .main-nav #res-nav .logo {
   display: none;
@@ -548,32 +547,14 @@ a {
 }
 
 @media (max-width: 770px) {
-  .main-nav .nav-items #toggler {
-    display: block;
+  .main-nav .nav-items #nav {
+    display: none;
   }
   .main-nav .nav-items #res-nav {
-    position: fixed;
-    top: 0px;
-    left: 100vw;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
   }
-  .main-nav .nav-items #res-nav ul {
-    flex-direction: column;
-  }
-  .main-nav .nav-items #res-nav ul .logo {
+  .main-nav .nav-items #toggler {
     display: block;
-  }
-  .main-nav .nav-items #res-nav ul a {
-    font-size: 16px;
-    font-weight: 300;
-    margin: 10px 0px;
-    letter-spacing: 0.2rem;
   }
 
   .main-foot {

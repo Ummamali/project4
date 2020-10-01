@@ -35,12 +35,3 @@ $dur-long: 900ms;
   bottom: $x;
   right: $y;
 }
-
-
-// animation
-@keyframes opacitate-out{
-  0%{opacity: 1;}
-  80%{opacity: 0;}
-  100%{opacity: 1;}
-}
-

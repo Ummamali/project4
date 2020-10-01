@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", function (){
       this.innerHTML = "<i class='fas fa-times'></i>";
       this.style.transform = "rotate(360deg)";
       res_nav.style.transform = "translateX(-100vw)";
+      res_nav.style.opacity = "1";
       toggled = true;
     }else{
       this.innerHTML = "<i class='fas fa-bars'></i>";
       this.style.transform = "rotate(-360deg)";
       res_nav.style.transform = "translateX(0vw)";
+      res_nav.style.opacity = "0"
       toggled = false;
     }
     
