@@ -28,20 +28,25 @@
 .specialize .text-area .line {
   width: 60px;
 }
-.specialize .frow i {
+.specialize .grid-4 {
+  margin-top: 20px;
+}
+.specialize .grid-4 i {
   color: #fca535;
   font-size: 36px;
   margin-bottom: 20px;
   transition-property: transform, background, color;
   transition-duration: 200ms;
 }
-.specialize .frow .card:hover i {
+.specialize .grid-4 h3 {
+  font-weight: 400;
+}
+.specialize .grid-4 .card:hover i {
   transform: translateY(-10px);
   color: #50627D;
 }
 
 .stats .card {
-  flex-grow: 1;
   padding: 40px 10px;
 }
 .stats .card i {
@@ -67,13 +72,16 @@
 .creative .text-area .line {
   width: 160px;
 }
-.creative .frow .card {
+.creative .grid-4 {
+  margin-top: 25px;
+}
+.creative .grid-4 .card {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.creative .frow .card .icon {
+.creative .grid-4 .card .icon {
   width: 80px;
   height: 80px;
   display: flex;
@@ -85,10 +93,10 @@
   margin-bottom: 25px;
   position: relative;
 }
-.creative .frow .card .icon i {
+.creative .grid-4 .card .icon i {
   font-size: 38px;
 }
-.creative .frow .card .icon .number {
+.creative .grid-4 .card .icon .number {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -100,6 +108,64 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+.creative .grid-4 .card h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.creative .grid-4 .card p {
+  color: #666666;
+}
+.creative .grid-4 .card .icon, .creative .grid-4 .card small, .creative .grid-4 .card .icon .number {
+  transition-property: transform, background, color, opacity;
+  transition-duration: 200ms;
+}
+.creative .grid-4 .card:hover .icon {
+  background: #fca535;
+  color: #333333;
+  transform: translateY(-10px);
+}
+.creative .grid-4 .card:hover .icon .number {
+  background: #333333;
+  color: #ffffff;
+}
+.creative .grid-4 .card:hover small {
+  opacity: 1;
+}
+.creative .grid-4 small {
+  opacity: 0;
+  padding: 5px 10px;
+  margin-top: 8px;
+  border-radius: 3px;
+  transition-property: background, color;
+  transition-duration: 200ms;
+}
+.creative .grid-4 small:hover {
+  background: #546783;
+}
+
+@media (max-width: 770px) {
+  .stats {
+    padding: 10px;
+    gap: 10px !important;
+  }
+  .stats .card {
+    padding: 20px 10px;
+    background: #efefef !important;
+  }
+
+  .creative .grid-4 {
+    gap: 35px;
+  }
+
+  .creative .grid-4 .card small {
+    opacity: 1;
+  }
+}
+@media (max-width: 500px) {
+  .specialize .grid-4 i, .creative .grid-4 .card .icon {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
