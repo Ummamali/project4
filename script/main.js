@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (){
       this.innerHTML = "<i class='fas fa-bars'></i>";
       this.style.transform = "rotate(-360deg)";
       res_nav.style.transform = "translateX(0vw)";
-      res_nav.style.opacity = "0"
+      res_nav.style.opacity = "0";
       toggled = false;
     }
     

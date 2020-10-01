@@ -61,12 +61,11 @@ a{
         left: 100vw;
         width: 100vw;
         height: 100vh;
-        background: rgba($color: #000000, $alpha: 0.8);
+        background: rgba($color: #000000, $alpha: 0.85);
         align-items: center;
         justify-content: center;
         z-index: 1;
-        transition-property: transform, opacity;
-        transition-duration: $dur-long;
+        transition: transform $dur-long ease-in-out, opacity $dur-long ease-in-out;
         display: none;
         opacity: 0;
 
@@ -74,8 +73,7 @@ a{
           flex-direction: column;
           .logo{display: block;}
           a{
-            font-size: 16px;
-            font-weight: 300;
+            font-size: 15px;
             margin: 10px 0px;
             letter-spacing: 0.2rem;
           }
@@ -149,16 +147,6 @@ a{
 
 // Tablet or less
 @media(max-width: 770px){
-  // Navbar
-  .main-nav{
-    .nav-items{
-      #nav{display: none;}
-      #res-nav{display: flex;}
-      #toggler{display: block;}
-      
-      
-    }
-  }
   // Footer
   .main-foot{
     grid-template-columns: 1fr;
@@ -172,5 +160,15 @@ a{
       small, .far.fa-thumbs-up{display: none;}
     }
 
+  }
+}
+@media(max-width:500px){
+  // Navbar changes
+  .main-nav{
+    .nav-items{
+      #nav{display: none;}
+      #res-nav{display: flex;}
+      #toggler{display: block;}
+      }
   }
 }
