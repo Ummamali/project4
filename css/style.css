@@ -122,6 +122,11 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* Backgrounds */
 .bg-primary-dark {
   background-color: #1D2638;
@@ -389,9 +394,16 @@
 
 @media (max-width: 770px) {
   .responsive.grid-4 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px;
-    padding: 0px 25px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .responsive.grid-2 {
+    grid-template-columns: 1fr !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 
   .responsive.card {
@@ -401,9 +413,8 @@
 }
 @media (max-width: 500px) {
   .responsive.grid-4 {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    gap: 20px;
+    grid-template-columns: 1fr !important;
+    column-gap: 10px;
   }
 }
 * {

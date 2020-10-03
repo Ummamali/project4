@@ -16,14 +16,16 @@
       width: 100px;
     }
   }
-  .grid{
-    display: grid;
+  .grid-2{
     grid-template-columns: 1fr 2fr;
     align-items: center;
     margin-top: 30px;
     column-gap: 20px;
 
     img{
+      display: inline-block;
+      margin: auto;
+      border-radius: 2px;
       width: 100%;
     }
 
@@ -64,9 +66,7 @@
     }
   }
 
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .grid-4{
     margin: auto;
     padding: 40px 0px;
     max-width: 1100px;
@@ -100,10 +100,10 @@
         margin-left: -40px;
       }
       &:nth-child(2){
-        @include position-tl(65px, 0px);
+        @include position-bl(0px, 0px);
       }
       &:nth-child(3){
-        @include position-tr(65px, 0px);
+        @include position-br(0px, 0px);
       }
       }
 
@@ -126,22 +126,24 @@
   }
   // This explanation is the part of eux section
   $card-width: 800px;
-  $card-height: 200px;
+  $card-height: 250px;
 
   .explanation{
     background: $dark;
     color: $light;
-    width: $card-width;
+    max-width: $card-width;
+    height: $card-height;
     margin: auto;
     border-radius: 5px;
-    display: relative;
-    height: $card-height;
+    position: relative;
 
     
     .card{
       position: absolute;
-      height: $card-height;
-      width: $card-width;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -231,9 +233,12 @@
 
 .clients{
   .contain-sm{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     padding: 40px 10px;
+
+    img{
+      align-self: center;
+      justify-self: center;
+    }
   }
 }
 
@@ -251,9 +256,7 @@
       background: lighten($color: $dark, $amount: 50%);
     }
   }
-  .people{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .grid-4{
     column-gap: 15px;
     padding: 20px 0px;
 
@@ -283,7 +286,82 @@
   }
 }
 
-// Media queries
+// Media queries from bigger to smaller
+
+// eux section has to response (@ 900px) much before tablets 
+@media (max-width:900px){
+  .modern{
+    .grid-4{
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px 60px;
+      row-gap: 30px;
+      .icontain{
+        transform: rotate(0deg) !important;
+        &:hover{
+          transform: scale(1.15) !important;
+        }
+      }
+    }
+  }
+}
+
+// tablet or less
+@media (max-width: 770px){
+  // about
+  .about{
+    .grid-2{
+      row-gap: 20px;
+
+      img{
+        width: 80%;
+      }
+      article{
+      border-right: 5px solid $secondary;
+    }
+    }
+  }
+  // clients
+  .clients{
+    .contain-sm{
+      padding: 20px 10px;
+    }
+  }
+}
+
+//special case for eux grid for mobiles
+$icon : 40px;
+$icon-fz : $icon - ($icon / 2);
+
+@media(max-width:500px){
+  .modern{
+    .contain-lg{
+      .responsive.grid-4{
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+        padding: 40px;
+
+        .icontain{
+          width: 100px;
+          height: 80px;
+
+          .icon{
+            width: $icon;
+            height: $icon;
+            i{
+              font-size: $icon-fz;
+            }
+            &:first-child{
+            margin-left: -$icon / 2;
+          }
+        }
+      }
+    }
+  }
+  .explanation{height: 300px;}
+}
+
+}
+
 
 
 

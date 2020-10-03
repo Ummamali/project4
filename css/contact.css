@@ -4,6 +4,9 @@
   background-position: center center;
 }
 
+.contact {
+  padding: 40px 20px;
+}
 .contact .text-area {
   margin-bottom: 40px;
 }

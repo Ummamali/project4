@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let current = document.getElementById("main-card");
   current.style.zIndex = "1";
   current.style.opacity = "1";
+
   document.getElementById("documentation").onmouseover = function () {
     current.style.opacity = "0";
     current.style.zIndex = "0";
