@@ -229,13 +229,16 @@
   .modern .grid-4 {
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 60px;
-    row-gap: 30px;
+    row-gap: 40px;
   }
   .modern .grid-4 .icontain {
     transform: rotate(0deg) !important;
   }
   .modern .grid-4 .icontain:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.2) !important;
+  }
+  .modern .grid-4 .icontain:hover .icon {
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.5);
   }
 }
 @media (max-width: 770px) {
@@ -256,22 +259,23 @@
 @media (max-width: 500px) {
   .modern .contain-lg .responsive.grid-4 {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 40px;
     padding: 40px;
   }
   .modern .contain-lg .responsive.grid-4 .icontain {
-    width: 100px;
-    height: 80px;
+    width: 130px;
+    height: 100px;
   }
   .modern .contain-lg .responsive.grid-4 .icontain .icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .modern .contain-lg .responsive.grid-4 .icontain .icon i {
-    font-size: 20px;
+    font-size: 25px;
   }
   .modern .contain-lg .responsive.grid-4 .icontain .icon:first-child {
-    margin-left: -20px;
+    margin-left: -25px;
   }
   .modern .explanation {
     height: 300px;

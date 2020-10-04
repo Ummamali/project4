@@ -294,11 +294,14 @@
     .grid-4{
       grid-template-columns: repeat(2, 1fr);
       padding: 40px 60px;
-      row-gap: 30px;
+      row-gap: 40px;
       .icontain{
         transform: rotate(0deg) !important;
         &:hover{
-          transform: scale(1.15) !important;
+          transform: scale(1.2) !important;
+          .icon{
+            box-shadow: 0px 0px 10px rgba($color: $dark, $alpha: 0.5);
+          }
         }
       }
     }
@@ -329,7 +332,7 @@
 }
 
 //special case for eux grid for mobiles
-$icon : 40px;
+$icon : 50px;
 $icon-fz : $icon - ($icon / 2);
 
 @media(max-width:500px){
@@ -337,12 +340,13 @@ $icon-fz : $icon - ($icon / 2);
     .contain-lg{
       .responsive.grid-4{
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 20px;
+        column-gap: 20px;
+        row-gap: 40px;
         padding: 40px;
 
         .icontain{
-          width: 100px;
-          height: 80px;
+          width: 130px;
+          height: 100px;
 
           .icon{
             width: $icon;
