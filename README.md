@@ -11,7 +11,7 @@ The stylesheet has been writtem is Sass
 * index.css
 * work.css
 * contact.css
-#Technologies Used
+# Technologies Used
 * HTML
 * CSS
 * SCSS
